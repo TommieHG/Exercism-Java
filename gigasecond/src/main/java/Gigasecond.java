@@ -1,19 +1,19 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
 
 public class Gigasecond {
-    public Gigasecond(LocalDate moment) {
+    
+    private LocalDateTime date;
 
+    public Gigasecond(LocalDate moment) {
+        date = moment.atStartOfDay();
     }
 
     public Gigasecond(LocalDateTime moment) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        date = moment;
     }
 
     public LocalDateTime getDateTime() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return date.plusSeconds((long) 1E9);
     }
 }
