@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Gigasecond {
-    
+
     private LocalDateTime date;
 
     public Gigasecond(LocalDate moment) {
